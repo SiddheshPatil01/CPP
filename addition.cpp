@@ -6,9 +6,11 @@ int add(int a , int b){
 }
 
 int main(){
-    int a =10;
-    int b=20;
-
+    int a, b;
+    cout<<"enter a : ";
+    cin>>a;
+    cout<<"Enter b : ";
+    cin>>b;
     int ans  = add(a,b);
     cout<<"additon is : "<<ans;
     return 0;
