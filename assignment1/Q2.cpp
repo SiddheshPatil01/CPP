@@ -49,6 +49,15 @@ int menu (){
 
     return choice;
 }
+
+bool leaf(){
+    if((this->year % 4)==0){
+       return true;
+    }else{
+        return false;
+    }
+}
+
 };
 
 
@@ -56,6 +65,7 @@ int menu (){
 int main(){
 
     class Date s1;
+    
     s1.initDate();
     
     int choice = s1.menu();
@@ -71,6 +81,12 @@ int main(){
             
             case 2:
                 s1.printDateOnConsole();
+
+            if(s1.leaf()){
+                cout<<"leaf"<<endl;
+            }else{
+                cout<<"Not leaf"<<endl;
+            }
                 break;
 
             default:
