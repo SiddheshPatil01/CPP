@@ -46,7 +46,9 @@ class Stack{
             }
         }
 
-        
+        ~Stack(){
+            delete[]a;
+        }
 
 };
 
