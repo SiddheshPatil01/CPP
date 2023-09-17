@@ -58,8 +58,6 @@ int menu (){
 
 }
 
-using namespace Nstudents;
-
 int main(){
 
     class Student s1;
