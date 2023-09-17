@@ -21,6 +21,9 @@ class Distance{
             d3.inchs = this->inchs + other.inchs;
             return d3;
         }
+        Distance operator++(int){
+            this->inchs++;
+        }
         
 
         friend void operator<<(ostream &out, Distance &other );
